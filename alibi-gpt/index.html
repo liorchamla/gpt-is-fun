@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlibiGPT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="src/app.ts" type="module" defer></script>
+  </head>
+  <body class="container">
+    <article>
+      <header>
+        <h2>Générez une excuse bidon pour votre absence</h2>
+        <p>
+          Remplis les informations ci-dessous, on te génère un alibi INCROYABLE
+          !
+        </p>
+      </header>
+
+      <form>
+        <strong>A qui s'adresse cette lettre ?</strong>
+        <select name="statut" id="statut">
+          <option value="ma femme">Votre femme</option>
+          <option value="mon mari">Votre mari</option>
+          <option value="mon patron">Votre patron</option>
+          <option value="ma patronne">Votre patronne</option>
+          <option value="mon ami">Votre ami</option>
+          <option value="mon amie">Votre amie</option>
+        </select>
+        <input
+          type="text"
+          id="nom"
+          placeholder="Le nom de la personne à qui s'adresse la lettre"
+        />
+
+        <strong>Les thèmes de l'excuse</strong>
+        <input type="text" placeholder="Elément de détail" id="theme-1" />
+        <input type="text" placeholder="Elément de détail" id="theme-2" />
+        <input type="text" placeholder="Elément de détail" id="theme-3" />
+
+        <button>Invente un alibi !</button>
+      </form>
+    </article>
+    <article id="result">
+      <h2>Remplis les informations et génère ton alibi !</h2>
+    </article>
+    <button id="copy">Copier l'alibi</button>
+  </body>
+</html>

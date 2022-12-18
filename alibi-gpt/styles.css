@@ -1,0 +1,10 @@
+@import url("@picocss/pico");
+
+form strong {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#copy {
+  display: none;
+}

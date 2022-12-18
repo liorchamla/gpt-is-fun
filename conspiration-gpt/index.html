@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConspiracyGPT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="src/app.ts" type="module" defer></script>
+  </head>
+  <body class="container">
+    <article>
+      <header>
+        <h2>Générer une théorie du complot</h2>
+        <p>
+          Remplis les informations ci-dessous, on te génère une théorie
+          conspirationniste INCROYABLE !
+        </p>
+      </header>
+
+      <form>
+        <strong>Les personnes impliquées</strong>
+        <input type="text" placeholder="Emmanuel Macron" id="personnage-1" />
+        <input type="text" placeholder="Faudel" id="personnage-2" />
+        <input type="text" placeholder="Georges W Bush" id="personnage-3" />
+
+        <strong>Le thème</strong>
+        <input type="text" placeholder="Trafic d'organes" id="theme" />
+
+        <strong>Aux ordres de qui ?</strong>
+        <input
+          type="text"
+          placeholder="Les chinois du FBI"
+          id="commanditaires"
+        />
+
+        <button>Raconte moi tout M. Conspi !</button>
+      </form>
+    </article>
+    <article id="result">
+      <h2>Remplis les informations et génère ta théorie du complot !</h2>
+    </article>
+  </body>
+</html>
